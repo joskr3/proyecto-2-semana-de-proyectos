@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Young-Serif;
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: Young-Serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  font-weight: 400;
+}
+
+main {
+  padding: 3rem;
+}
+
+.section-intro {
+  margin-bottom: 2rem;
+}
+
+.section-intro__description {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit;
+}
+
+.section-preparation {
+  background: hsl(330, 100%, 98%);
+  padding: 2rem;
+}
+
+.section-ingredients {
+  padding: 1rem;
+}
+
+.section-ingredients__title {
+  margin-bottom: 1rem;
+  font-family: Young-Serif;
+}
+
+.section-preparation__title {
+  color: hsl(332, 51%, 32%);
+  font-family: Outfit;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-family: Outfit;
+  font-weight: 600;
+}
+
+/* .section-preparation__list {
+
+} */
+
+.section-preparation__list__item {
+  margin: 0.5rem auto;
+  padding-left: 1rem;
+}
+
+.section-preparation__list__item__subtext {
+  color: hsl(24, 5%, 18%);
+  font-weight: 500;
+
+}
+
+.section-preparation__list__item__text {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit;
+}
+
+
+/* .section-ingredients__list {} */
+
+.section-ingredients__list__item {
+  padding-left: 1rem;
+}
+
+.section-instructions {
+  padding: 1rem;
+}
+
+.section-instructions__title {
+  margin-bottom: 1rem;
+  font-family: Young-Serif;
+}
+
+.section-instructions__list__item {
+  margin: 1rem auto
+}
+
+.section-instructions__list__item__text {
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit;
+}
+
+.section-instructions__list__item__text__span {
+  font-weight: 600;
+}
+
+.section-nutrition__title
+{
+  margin: 1rem;
+
+    margin-bottom: 1rem;
+      font-family: Young-Serif;
+}
+
+
