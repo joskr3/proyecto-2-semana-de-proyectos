@@ -3,30 +3,36 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-
+  <script type="module" src="script.js"></script>
   <title>Frontend Mentor | Recipe page</title>
-
 </head>
 
 <body>
+  <div id="myModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center">
+     <div class="bg-white p-8">
+       <p>Modal content</p>
+      <button id="closeModal">Close</button>
+      </div>
+    </div>
   <header>
     <img src="./assets/images/image-omelette.jpeg" alt="omelette">
   </header>
   <main>
-    <section class="section-intro">
-      <h1>
+    <section class="section-intro miclase">
+      <h1 id="titulo">
         Simple Omelette Recipe
       </h1>
+      <!-- AQUI SE AGREGA DE MANERA PROGRAMATICA(CON CODIGO JS), EL BOTON -->
       <p class="section-intro__description">
         An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.
       </p>
     </section>
-    <section class="section-preparation">
+    <section class="section-preparation section-intro miclase">
       <h4 class="section-preparation__title">
         Preparation time
       </h4>
@@ -55,11 +61,11 @@
       </ul>
     </section>
     <section class="section-ingredients">
-      <h2 class="section-ingredients__title">
+      <h2 class="section-ingredients__title" id="subtitulo_ingredients">
         Ingredients
       </h2>
       <ul class="section-ingredients__list">
-        <li class="section-ingredients__list__item">2-3 large eggs</li>
+        <li class="section-ingredients__list__item miIdEspecial">2-3 large eggs</li>
         <li class="section-ingredients__list__item">Salt, to taste</li>
         <li class="section-ingredients__list__item">Pepper, to taste</li>
         <li class="section-ingredients__list__item">1 tablespoon of butter or oil</li>
@@ -111,11 +117,11 @@
 
         <li class="section-instructions__list__item">
           <p class="section-instructions__list__item__text"></p>
-            <span class="section-instructions__list__item__text__span">
-              Fold and serve:
-            </span>
-            As the omelette continues to cook, carefully lift one edge and fold it over the
-            fillings. Let it cook for another minute, then slide it onto a plate.
+          <span class="section-instructions__list__item__text__span">
+            Fold and serve:
+          </span>
+          As the omelette continues to cook, carefully lift one edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.
           </p>
         </li>
 
